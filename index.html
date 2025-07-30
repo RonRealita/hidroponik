@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bertani Agro Farm</title>
+    <title>Bertani Agrofarm</title>
     <style>
         #about, #services, #courses, #contact {
             scroll-margin-top: 90px; 
@@ -821,7 +821,7 @@
         <div class="header-container">
             <div class="logo-title">
                 <img src="https://yt3.googleusercontent.com/ytc/AIdro_nchEDIxs1PJ2NlnIKJ6BJnyW9ZRTpV01hJyrluiKQRMw=s900-c-k-c0x00ffffff-no-rj" alt="Bertani Agro Farm" class="profile-img">
-                <h1>Bertani Agro Farm</h1>
+                <h1>Bertani Agrofarm</h1>
             </div>    
             <nav class="nav" id="nav">
                 <ul>
@@ -847,7 +847,7 @@
         <div class="hero-overlay">
             <h1>
                 Selamat Datang di <br>
-                Bertani Agro Farm
+                Bertani Agrofarm
             </h1>
             <div class="hero-address-container">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="hero-icon">
@@ -866,10 +866,10 @@
         <div class="team-member">
             <img src="https://media.licdn.com/dms/image/v2/D4D03AQGvfu4IMkCsdg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1675262158161?e=2147483647&v=beta&t=llGpkv0ZU9Pc_Dzf5CM4Eb-m4FmuEkDczZxeGgzqKFQ" alt="Rahmatul Khafidl">
             <h3>Rahmatul Khafidl, S.P.</h3>
-            <h4>Owner Bertani Agro Farm <br> (2019 - Sekarang)</h4>
+            <h4>Owner Bertani Agrofarm <br> (2019 - Sekarang)</h4>
 
             <div class="team-info">
-                <p>Lulusan Sarjana Pertanian yang memiliki passion besar dalam pengembangan pertanian modern. Memulai Bertani Agro Farm pada tahun 2019 dengan visi menjadi agroedukasi terpopuler di Kota Semarang.</p>
+                <p>Lulusan Sarjana Pertanian yang memiliki passion besar dalam pengembangan pertanian modern. Memulai Bertani Agrofarm pada tahun 2019 dengan visi menjadi agroedukasi terpopuler di Kota Semarang.</p>
                 <h5>Keahlian</h5>
                 <ul class="skills">
                     <li>Hidroponik</li>
@@ -892,9 +892,9 @@
 
     <section id="about">
         <div class="about-header">
-            <h2>Tentang Bertani Agro Farm</h2>
+            <h2>Tentang Bertani Agrofarm</h2>
             <p>
-                Bertani Agro Farm adalah perusahaan agribisnis yang berkomitmen untuk menghasilkan sayuran segar berkualitas tinggi melalui metode pertanian hidroponik modern dan berkelanjutan.
+                Bertani Agrofarm adalah perusahaan agribisnis yang berkomitmen untuk menghasilkan sayuran segar berkualitas tinggi melalui metode pertanian hidroponik modern dan berkelanjutan.
             </p>
         </div>
 
@@ -959,7 +959,7 @@
 
     <section id="services" class="services-section">
         <h2>Layanan Kami</h2>
-        <p>Kami menyediakan berbagai layanan komprehensif dalam bidang pertanian hidroponik untuk memenuhi kebutuhan Anda</p>
+        <p>Bertani Agrofarm menyediakan berbagai layanan komprehensif dalam bidang pertanian hidroponik untuk memenuhi kebutuhan Anda</p>
         <div class="services-grid">
             <div class="service-card">
                 <div class="icon">
@@ -1014,7 +1014,7 @@
     <section id="courses" class="courses-section">
         <h2>Galeri Pelatihan</h2>
         <p>
-            Kami menyediakan berbagai layanan komprehensif dalam bidang pertanian hidroponik untuk memenuhi kebutuhan Anda.
+            Bertani Agrofarm menyelenggarakan pelatihan hidroponik untuk meningkatkan keterampilan masyarakat dalam bercocok tanam secara praktis dan berkelanjutan.
         </p>
 
         <!-- Galeri Pelatihan -->
@@ -1061,7 +1061,7 @@
             </div>
             <div class="contact-info">
                 <strong>Telepon</strong><br>
-                +62 812-3456-7890
+                +62 882-9457-6951
             </div>
         </div>
 
@@ -1100,7 +1100,7 @@
     </section>
 
     <footer>
-        &copy; 2025 Bertani Agro Farm. All rights reserved.
+        &copy; 2025 Bertani Agrofarm. All rights reserved.
     </footer>
 
     <script>
@@ -1117,6 +1117,22 @@
             link.addEventListener('click', () => {
                 nav.classList.remove('show');
             });
+        });
+
+        const video = document.getElementById("myVideo");
+
+        // Coba autoplay saat halaman dimuat
+        video.play().catch(() => {
+            // Jika autoplay gagal (biasanya di HP), tampilkan tombol manual
+            const btn = document.createElement("button");
+            btn.innerText = "Putar Video";
+            btn.style.display = "block";
+            btn.style.margin = "10px auto";
+            btn.onclick = () => {
+            video.play();
+            btn.style.display = "none"; // Sembunyikan tombol setelah diputar
+            };
+            document.body.appendChild(btn);
         });
     </script>
 </body>
