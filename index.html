@@ -76,7 +76,7 @@
                 top: 70px;
                 right: 20px;
                 width: 200px;
-                border: 1px solid #ffffff33;
+                border: 1px solid #555;
                 padding: 10px;
                 z-index: 1000;
             }
@@ -194,16 +194,26 @@
             }
 
             .hero-overlay h1 {
-                font-size: 2em;
+                font-size: 3em;
             }
 
             .hero-address {
-                font-size: 1em;
+                font-size: 2em;
             }
 
             .hero-icon {
                 width: 20px;
                 height: 20px;
+            }
+
+            .hero {
+                position: relative;
+                width: 100%;
+                aspect-ratio: 16 / 10;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
         }
 
@@ -337,15 +347,15 @@
             }
 
             .team-section h2 {
-                font-size: 1em;
+                font-size: 1.5em;
             }
 
             .team-member h3 {
-                font-size: 0.9em;
+                font-size: 1em;
             }
 
             .team-member h4 {
-                font-size: 0.85em;
+                font-size: 0.9em;
                 margin-top: 10px;
                 margin-bottom: 10px;
             }
@@ -355,11 +365,11 @@
             }
 
             .skills li, .achievements li {
-                font-size: 0.8em;
+                font-size: 0.9em;
             }
 
             .team-section p {
-                font-size: 0.8em;
+                font-size: 0.9em;
             }
         }
 
@@ -475,7 +485,7 @@
 
         @media (max-width: 768px) {
         .about-header h2 {
-            font-size: 1em;
+            font-size: 1.5em;
         }
 
         .about-header h2::after {
@@ -484,7 +494,7 @@
         }
 
         .about-header p {
-            font-size: 0.8em;
+            font-size: 0.9em;
             padding: 0 20px;
         }
 
@@ -502,22 +512,22 @@
 
         .about-visi-misi h3,
         .about-why h3 {
-            font-size: 0.9em;
+            font-size: 1em;
             text-align: center;
         }
 
         .about-visi-misi h4 {
-            font-size: 0.9em;
+            font-size: 1em;
             text-align: center;
         }
 
         .about-visi-misi p{
-            font-size: 0.8em;
+            font-size: 0.9em;
             text-align: center;
         }
         .about-visi-misi ol,
         .about-why .text p {
-            font-size: 0.8em;
+            font-size: 0.9em;
         }
 
         .icon-text {
@@ -530,7 +540,7 @@
         }
 
         .text strong {
-            font-size: 0.8em;
+            font-size: 0.9em;
         }
     }
 
@@ -606,7 +616,7 @@
         }
 
         .services-section h2 {
-            font-size: 1em;
+            font-size: 1.2em;
         }
 
         .services-section h2::after {
@@ -615,7 +625,7 @@
         }
 
         .services-section p {
-            font-size: 0.8em;
+            font-size: 0.9em;
             padding: 0 20px;
         }
 
@@ -635,12 +645,12 @@
         }
 
         .service-card h3 {
-            font-size: 0.9em;
+            font-size: 1em;
             margin-top: 10px;
         }
 
         .service-card p {
-            font-size: 0.8em;
+            font-size: 0.9em;
             text-align: justify;
         }
     }
@@ -706,11 +716,11 @@
         }
 
         .courses-section h2 {
-            font-size: 1em;
+            font-size: 1.1em;
         }
 
         .courses-section p {
-            font-size: 0.8em;
+            font-size: 0.9em;
             padding: 0 10px;
         }
 
@@ -750,27 +760,25 @@
         }
         
         .contact-title h2 {
-            font-size: 1em;
+            font-size: 1.1em;
             color: #172815;
         }
 
         .contact-info {
-            /* line-height: 1.5; */
             color: #333;
-            font-size: 0.8em;
+            font-size: 0.9em;
         }
 
         .contact-info a {
             color: #333;
             text-decoration: none;
-            font-size: 0.8em;
+            font-size: 0.9em;
         }
 
         .contact-info a:hover {
             color: #006400;
             text-decoration: underline;
         }
-
 
         @media (min-width: 768px) {     
             .contact-title h2 {
@@ -816,6 +824,7 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <div class="header-container">
@@ -840,9 +849,9 @@
 
     <section id="home" class="hero">
         <video id="myVideo" autoplay muted loop playsinline width="100%">
-  <source src="hydroponic.mp4" type="video/mp4">
-  Maaf, browser Anda tidak mendukung pemutar video.
-</video>
+            <source src="hydroponic.mp4" type="video/mp4">
+            Maaf, browser Anda tidak mendukung pemutar video.
+        </video>
 
         <div class="hero-overlay">
             <h1>
@@ -854,7 +863,7 @@
                     <path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd" />
                 </svg>
                 <span class="hero-address">
-                    Desa Sidodadi Rt 5 Rw 4, <br>
+                    Desa Sidodadi RT 5 RW 4, <br>
                     Kelurahan Mijen, Kecamatan Mijen, Kota Semarang
                 </span>
             </div>
@@ -867,7 +876,6 @@
             <img src="pendiri.png" alt="Rahmatul Khafidl">
             <h3>Rahmatul Khafidl, S.P.</h3>
             <h4>Owner Bertani Agrofarm <br> (2019 - Sekarang)</h4>
-
             <div class="team-info">
                 <p>Lulusan Sarjana Pertanian yang memiliki passion besar dalam pengembangan pertanian modern. Memulai Bertani Agrofarm pada tahun 2019 dengan visi menjadi agroedukasi terpopuler di Kota Semarang.</p>
                 <h5>Keahlian</h5>
@@ -877,7 +885,6 @@
                     <li>Agronomi</li>
                     <li>Teknologi Pertanian</li>
                 </ul>
-
                 <h5>Pencapaian</h5>
                 <ul class="achievements">
                     <li>Mengembangkan tanaman hidroponik berkualitas tinggi</li>
@@ -889,7 +896,6 @@
         </div>
     </section>
 
-
     <section id="about">
         <div class="about-header">
             <h2>Tentang Bertani Agrofarm</h2>
@@ -897,17 +903,14 @@
                 Bertani Agrofarm adalah perusahaan agribisnis yang berkomitmen untuk menghasilkan sayuran segar berkualitas tinggi melalui metode pertanian hidroponik modern dan berkelanjutan.
             </p>
         </div>
-
         <div class="about-content">
             <!-- Visi Misi -->
             <div class="about-visi-misi">
                 <h3>Visi & Misi Kami</h3>
-
                 <h4>Visi</h4>
                 <p>
-                    Menjadi agroedukasi terpopuler di Kota Semarang.
+                    Menjadi agroedukasi terpopuler di Kota Semarang
                 </p>
-
                 <h4>Misi</h4>
                 <ol>
                     <li>Membentuk SDM BAF yang profesional</li>
@@ -917,10 +920,8 @@
                     <li>Memberdayakan masyarakat dalam kegiatan pertanian yang bertujuan peningkatan ketahanan pangan masyarakat</li>
                     <li>Menyediakan kebutuhan bertani secara lengkap dan terjangkau</li>
                     <li>Menggandeng organisasi yang memiliki misi sama dengan BAF</li>
-
                 </ol>
             </div>
-
             <!-- Mengapa Memilih Kami -->
             <div class="about-why">
                 <h3>Mengapa Memilih Kami?</h3>
@@ -1042,7 +1043,6 @@
                 <a href="https://www.instagram.com/bertani_agrofarm/" target="_blank">@bertani_agrofarm</a>
             </div>
         </div>
-
         <!-- Email -->
         <div class="contact-item">
             <div class="icon">
@@ -1052,8 +1052,7 @@
                 <strong>Email</strong><br>
                 <a href="mailto:bertaniagrofarm@gmail.com" target="_blank">bertaniagrofarm@gmail.com</a>
             </div>
-        </div>
-        
+        </div>   
         <!-- Telepon -->
         <div class="contact-item">
             <div class="icon">
@@ -1064,7 +1063,6 @@
                 +62 882-9457-6951
             </div>
         </div>
-
         <!-- Alamat -->
         <div class="contact-item">
             <div class="icon">
@@ -1072,7 +1070,7 @@
             </div>
             <div class="contact-info">
                 <strong>Alamat</strong><br>
-                Desa Sidodadi Rt 5 Rw 4, Kelurahan Mijen, Kecamatan Mijen, Kota Semarang, Jawa Tengah, Indonesia
+                Desa Sidodadi RT 5 RW 4, Kelurahan Mijen, Kecamatan Mijen, Kota Semarang, Jawa Tengah, Indonesia
                 <br><br>
                 <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.5902761699713!2d110.32234407463551!3d-7.05733399294506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7061b06201ca99%3A0x1be3c088f9f9c70f!2sKebun%202%20Bertani%20Agro%20Farm!5e0!3m2!1sid!2sid!4v1753897870837!5m2!1sid!2sid" 
@@ -1085,7 +1083,6 @@
                 </iframe>
             </div>
         </div>
-
         <!-- Jam Operasional -->
         <div class="contact-item">
             <div class="icon">
@@ -1093,14 +1090,14 @@
             </div>
             <div class="contact-info">
                 <strong>Jam Operasional</strong><br>
-                Sabtu - Kamis: 07.00 - 16.00<br>
+                Sabtu - Kamis: 07.00 - 16.00 WIB<br>
                 Jumat: Tutup
             </div>
         </div>
     </section>
 
     <footer>
-        &copy; 2025 Bertani Agrofarm. All rights reserved.
+        &copy; 2025 TIM KKN-T IDBU 82 UNDIP 2025. All rights reserved.
     </footer>
 
     <script>
@@ -1117,6 +1114,14 @@
             link.addEventListener('click', () => {
                 nav.classList.remove('show');
             });
+        });
+
+        // Klik di luar menu untuk menutup
+        document.addEventListener('click', (e) => {
+            // Jika elemen yang diklik bukan toggle atau nav
+            if (!nav.contains(e.target) && e.target !== toggle) {
+                nav.classList.remove('show');
+            }
         });
 
         const video = document.getElementById("myVideo");
